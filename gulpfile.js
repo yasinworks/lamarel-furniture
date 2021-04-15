@@ -11,12 +11,14 @@ const path = {
     build: {
         js: 'build/js/',
         style: 'build/css/',
-        img: 'build/img/'
+        img: 'build/img/',
+        fonts: 'build/fonts'
     },
     src: {
         js: 'src/js/*.js',
         style: 'src/scss/**/*.scss',
-        img: 'src/img/**/*.*'
+        img: 'src/img/**/*.*',
+        fonts: 'src/fonts/**/*.*'
     },
     watch: {
         html: './index.html',
@@ -56,6 +58,12 @@ const imgBuild = () => (
         .pipe(browserSync.stream())
 );
 
+const fontsBuild = () => (
+     gulp.src(path.src.fonts, {allowEmpty: true})
+        .pipe(gulp.dest(path.build.fonts))
+        .pipe(browserSync.stream())
+)
+
 const watcher = () => {
     browserSync.init({
         server: {
@@ -73,5 +81,6 @@ gulp.task('default', gulp.series(
     scssBuild,
     jsBuild,
     imgBuild,
+    fontsBuild,
     watcher
 ));
