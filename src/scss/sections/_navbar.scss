@@ -70,7 +70,10 @@
       display: none;
 
       &-item {
-        font-size: 30px;
+        display: block;
+        font-size: 25px;
+        text-decoration: none;
+        color: #000;
 
         &:not(:last-child) {
           margin-bottom: 30px;
