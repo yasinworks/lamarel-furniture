@@ -1,0 +1,68 @@
+.hero {
+  margin-top: 15px;
+  margin-bottom: 120px;
+  display: flex;
+  flex-direction: column;
+
+  &__text {
+    padding: 0 5px 0 10px;
+  }
+
+  &__title {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 38px;
+    line-height: 48px;
+    color: #282828;
+
+    & .yellow {
+      color: #FFDD55;
+    }
+
+    & .purple {
+      color: #5052A2;
+    }
+  }
+
+  &__description {
+    margin-top: 10px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #282828;
+    opacity: .46;
+  }
+  
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    color: #282828;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 35px;
+  }
+
+  & .button_yellow {
+    padding: 25px 70px 25px 80px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    
+    & img {
+      width: 27px;
+      height: 27px;
+    }
+  }
+
+  & .button_purple {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px 30px;
+    align-self: center;
+  }
+}

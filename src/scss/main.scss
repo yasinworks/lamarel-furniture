@@ -11,5 +11,21 @@ body {
   padding: 0 10px;
 }
 
+.button {
+  &_yellow {
+    border: none;
+    background: #FFDD55;
+    border-radius: 36.5px;
+    outline: none;
+  }
+
+  &_purple {
+    border: none;
+    background: #5052A2;
+    border-radius: 36.5px;
+    outline: none;
+  }
+}
+
 @import 'reset';
 @import 'sections/all';
