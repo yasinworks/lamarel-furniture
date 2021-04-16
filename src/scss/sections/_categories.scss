@@ -1,0 +1,20 @@
+.categories {
+  &__item {
+    display: block;
+    position: relative;
+    height: 254px;
+
+    &-bg {
+      filter: brightness(.57);
+    }
+
+    &-title {
+      position: absolute;
+      top: 25px;
+      left: 30px;
+      font-weight: bold;
+      font-size: 30px;
+      color: #fff;
+    }
+  }
+}
