@@ -1,4 +1,5 @@
 .categories {
+  margin-bottom: 30px;
   &__item {
     display: block;
     position: relative;
@@ -6,6 +7,7 @@
 
     &-bg {
       filter: brightness(.57);
+      width: 100%;
     }
 
     &-title {
