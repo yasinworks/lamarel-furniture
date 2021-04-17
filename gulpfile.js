@@ -68,7 +68,9 @@ const watcher = () => {
     browserSync.init({
         server: {
             baseDir: "./"
-        }
+        },
+        online: true,
+        tunnel: true,
     });
     gulp.watch(path.watch.html).on('change', browserSync.reload);
     gulp.watch(path.watch.style, scssBuild).on('change', browserSync.reload);

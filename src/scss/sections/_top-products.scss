@@ -1,0 +1,90 @@
+.top-products {
+  padding: 15px 27px 0;
+
+  &__title {
+    display: inline-block;
+    text-align: center;
+    & p {
+      font-weight: bold;
+      font-size: 30px;
+      color: #282828;
+      transform: translateY(15px);
+    }
+
+    & .title-line {
+      width: 280px;
+    }
+  }
+
+  &__tabs {
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-evenly;
+
+    &-item {
+      width: 60px;
+      height: 60px;
+      border: none;
+      border-radius: 50%;
+      background-color: #fff;
+      outline: none;
+
+      &.selected {
+        background: linear-gradient(180deg, rgba(44, 44, 44, 0.76) 0%, #282828 100%);
+        & svg path {
+          fill: #FFDD55;
+        }
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 30px;
+
+    &-title {
+      font-weight: 500;
+      font-size: 25px;
+    }
+
+    &-description {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      font-size: 15px;
+      line-height: 26px;
+      color: #282828;
+    }
+
+    &-link {
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 173%;
+      color: #282828;
+      text-decoration: none;
+      position: relative;
+
+      & span {
+        border-bottom: 1px solid #282828;
+        z-index: 1000;
+      }
+      
+      &_bg {
+        height: 53px;
+        width: 53px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, rgba(255, 236, 159, 0.76) 0%, #FFDD55 100%);
+        margin-right: 20px;
+      }
+
+      & .title-line {
+        display: inline-block;
+        width: 140px;
+        position: absolute;
+        left: 105px;
+        top: 10px;
+      }
+    }
+  }
+}
