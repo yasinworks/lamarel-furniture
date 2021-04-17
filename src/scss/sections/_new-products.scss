@@ -1,0 +1,22 @@
+.new-products {
+  margin-top: 105px;
+
+  &__title {
+    padding: 0 27px;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+
+    &-content {
+      position: absolute;
+      font-weight: bold;
+      font-size: 30px;
+      color: #282828;
+      bottom: -1px;
+    }
+
+    & .title-line {
+      width: 143px;
+    }
+  }
+}
