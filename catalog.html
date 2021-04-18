@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lamarel' Furniture Catalog</title>
+    <link rel="stylesheet" href="build/libs/nouislider.min.css">
+    <link rel="stylesheet" href="build/fonts/Geometria/fonts.css">
+    <link rel="stylesheet" href="build/css/styles.min.css">
+</head>
+<body>
+<div class="container">
+    <nav class="navbar">
+        <picture class="navbar__logo">
+            <img src="build/img/hero/logo.svg" alt="">
+        </picture>
+
+        <div class="navbar__burger">
+            <div class="navbar__burger-line"></div>
+            <div class="navbar__burger-line"></div>
+            <div class="navbar__burger-line"></div>
+        </div>
+
+        <div class="navbar__burger-menu">
+            <a class="navbar__burger-menu-item" href="#">Головна</a>
+            <a class="navbar__burger-menu-item" href="#">Доставка і оплата</a>
+            <a class="navbar__burger-menu-item" href="#">Каталог</a>
+            <a class="navbar__burger-menu-item" href="#">Контакти</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <button class="button_yellow">
+            <img src="build/img/hero/catalog-icon.svg" alt="catalog">
+            Каталог товарів
+        </button>
+
+        <div class="breadcrumb">
+            <a href="/index.html" class="breadcrumb__item">
+                Головна
+            </a>
+            <a class="breadcrumb__item">
+                Каталог товарів
+            </a>
+        </div>
+    </div>
+
+    <div class="filter">
+        <div class="filter__dropdown">
+            Фільтр
+            <img src="build/img/svg/dropdown-arrow.svg" alt="">
+        </div>
+        <div class="filter__content">
+            <div class="filter__content-category">
+                <h1 class="filter__content-category--title">Категория</h1>
+                <div class="filter__content-category--item">
+                    <input id="check-sofa" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-sofa">
+                        Дивани<span class="filter__content-category--item_gray">(52)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-chair" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-chair">
+                        Крісла<span class="filter__content-category--item_gray">(19)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-bed" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-bed">
+                        Ліжка<span class="filter__content-category--item_gray">(9)</span>
+                    </label>
+                </div>
+            </div>
+            <div class="filter__content-category">
+                <h1 class="filter__content-category--title">Ціна</h1>
+                <div class="filter__content-category--slider" id="range-slider"></div>
+                <div class="filter__content-category--price">
+                    <span>2500</span>
+                    <span>35000</span>
+                </div>
+            </div>
+            <div class="filter__content-category">
+                <h1 class="filter__content-category--title">Матеріал</h1>
+                <div class="filter__content-category--item">
+                    <input id="check-wood" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-wood">
+                        Дерево<span class="filter__content-category--item_gray">(52)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-skin" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-skin">
+                        Кожа<span class="filter__content-category--item_gray">(19)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-suede" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-suede">
+                        Замша<span class="filter__content-category--item_gray">(9)</span>
+                    </label>
+                </div>
+            </div>
+            <div class="filter__content-category">
+                <h1 class="filter__content-category--title">Модель</h1>
+                <div class="filter__content-category--item">
+                    <input id="check-degas" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-degas">
+                        Дегас<span class="filter__content-category--item_gray">(52)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-diamond" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-diamond">
+                        Діамант<span class="filter__content-category--item_gray">(19)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-monro" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-monro">
+                        Монро<span class="filter__content-category--item_gray">(9)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-monro-luks" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-monro-luks">
+                        Монро Люкс<span class="filter__content-category--item_gray">(9)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-shervud" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-shervud">
+                        Шервуд<span class="filter__content-category--item_gray">(19)</span>
+                    </label>
+                </div>
+                <div class="filter__content-category--item">
+                    <input id="check-retro" class="filter__content-category--checkbox" type="checkbox"/>
+                    <label class="filter__content-category--label" for="check-retro">
+                        Ретро<span class="filter__content-category--item_gray">(9)</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="build/libs/nouislider.min.js"></script>
+<script src="build/js/scripts.min.js"></script>
+</body>
+</html>

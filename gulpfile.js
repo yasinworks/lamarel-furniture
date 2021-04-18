@@ -12,19 +12,22 @@ const path = {
         js: 'build/js/',
         style: 'build/css/',
         img: 'build/img/',
-        fonts: 'build/fonts'
+        fonts: 'build/fonts',
+        libs: 'build/libs'
     },
     src: {
         js: 'src/js/*.js',
         style: 'src/scss/**/*.scss',
         img: 'src/img/**/*.*',
-        fonts: 'src/fonts/**/*.*'
+        fonts: 'src/fonts/**/*.*',
+        libs: 'src/libs/**/*.*'
     },
     watch: {
-        html: './index.html',
+        html: './*.html',
         js: 'src/js/*.js',
         style: 'src/scss/**/*.scss',
         img: 'src/img/**/*.*',
+        libs: 'src/libs/**/*.*'
     },
     clean: './build/'
 };
@@ -34,6 +37,11 @@ const cleanBuild = () => (
         .pipe(clean())
 );
 
+const libsBuild = () => (
+    gulp.src(path.src.libs, {allowEmpty: true})
+        .pipe(gulp.dest(path.build.libs))
+        .pipe(browserSync.stream())
+)
 const scssBuild = () => (
     gulp.src(path.src.style, {allowEmpty: true})
         .pipe(sass().on('error', sass.logError))
@@ -73,6 +81,7 @@ const watcher = () => {
         tunnel: true,
     });
     gulp.watch(path.watch.html).on('change', browserSync.reload);
+    gulp.watch(path.watch.libs).on('change', browserSync.reload)
     gulp.watch(path.watch.style, scssBuild).on('change', browserSync.reload);
     gulp.watch(path.watch.js, jsBuild).on('change', browserSync.reload);
     gulp.watch(path.watch.img, imgBuild).on('change', browserSync.reload);
@@ -80,6 +89,7 @@ const watcher = () => {
 
 gulp.task('default', gulp.series(
     cleanBuild,
+    libsBuild,
     scssBuild,
     jsBuild,
     imgBuild,
