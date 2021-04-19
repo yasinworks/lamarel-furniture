@@ -1,0 +1,30 @@
+.delivery-index {
+  box-sizing: border-box;
+  position: relative;
+  margin-top: 120px;
+
+  &__img {
+    position: absolute;
+    top: -65px;
+  }
+
+  &__content {
+    background-color: #5052A2;
+    padding: 120px 20px 25px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 121%;
+      color: #fff;
+    }
+
+    & .button_yellow {
+      font-weight: 500;
+      font-size: 18px;
+      color: #282828;
+      padding: 20px 30px;
+      margin-top: 25px;
+    }
+  }
+}

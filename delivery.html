@@ -5,9 +5,147 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>Lamarel' Furniture Delivery</title>
+    <link rel="stylesheet" href="build/fonts/Geometria/fonts.css">
+    <link rel="stylesheet" href="build/css/styles.min.css">
 </head>
 <body>
+<div class="container">
+    <nav class="navbar">
+        <a href="/index.html" class="navbar__logo">
+            <img src="build/img/hero/logo.svg" alt="">
+        </a>
 
+        <div class="navbar__burger">
+            <div class="navbar__burger-line"></div>
+            <div class="navbar__burger-line"></div>
+            <div class="navbar__burger-line"></div>
+        </div>
+
+        <div class="navbar__burger-menu">
+            <a class="navbar__burger-menu-item" href="/index.html">Головна</a>
+            <a class="navbar__burger-menu-item" href="/delivery.html">Доставка і оплата</a>
+            <a class="navbar__burger-menu-item" href="#">Каталог</a>
+            <a class="navbar__burger-menu-item" href="/contacts.html">Контакти</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <button onclick="window.location.href='/catalog.html'" class="button_yellow">
+            <img src="build/img/hero/catalog-icon.svg" alt="catalog">
+            Каталог товарів
+        </button>
+
+        <div class="breadcrumb">
+            <a href="/index.html" class="breadcrumb__item">
+                Головна
+            </a>
+            <a class="breadcrumb__item">
+                Доставка і оплата
+            </a>
+        </div>
+    </div>
+
+    <div class="delivery">
+        <div class="delivery__title">
+            <h1 class="delivery__title-content">
+                Доставка і оплата
+            </h1>
+            <div class="title-line purple"></div>
+        </div>
+
+        <div class="delivery__content">
+            <div class="delivery__content-item">
+                <p class="delivery__content-item-title">Оплата:</p>
+                <ul class="delivery__content-item-list">
+                    <li class="delivery__content-item-list_item">Оплата при получении</li>
+                </ul>
+            </div>
+
+            <div class="delivery__content-item">
+                <p class="delivery__content-item-title">Доставка:</p>
+                <ul class="delivery__content-item-list">
+                    <li class="delivery__content-item-list_item">Оплата при получении</li>
+                    <li class="delivery__content-item-list_item">Оплата при получении</li>
+                </ul>
+            </div>
+
+            <div class="delivery__content-item">
+                <p class="delivery__content-item-title">Порядок возврата товара <br> надлежащего качества:</p>
+                <p class="delivery__content-item-text">
+                    1.1. Возврат товара в Интернет-магазин производится согласно действующего законодательства Украины.<br>
+                    1.2. Возврат товара в Интернет-магазин производится за счет Покупателя. <br>
+                    1.3. При возврате Покупателем товара надлежащего качества, Интернет-магазин возвращает ему
+                    уплаченную за товар денежную сумму по факту возврата товара за вычетом компенсации расходов
+                    Интернет-магазина связанных с доставкой товара Покупателю. <br>
+                    1.4. В соответствии с Законом Украины «О защите прав потребителей» ст. 13, 14, 20, все пищевые
+                    продукты надлежащего качества не подлежат возврату.
+                    Если полученный пищевой продукт не надлежащего качества (испорчен, не пригоден к употреблению,
+                    утратил свои пищевые свойства), такой продукт подлежит замене либо осуществляется полный возврат
+                    средств. В случае замены, логистические расходы несет поставщик.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="footer">
+    <img class="footer__logo" src="build/img/hero/logo.svg" alt="">
+    <div class="footer__description">
+        <p>Магазин меблів у країні з 2019 року. На нашому веб-сайті ми продаємо понад 1000+ фірмових товарів</p>
+    </div>
+    <div class="footer__contacts">
+        <div class="footer__contacts-item">
+            <div class="footer__contacts-item--logo">
+                <img src="build/img/footer/phone.svg" alt="">
+            </div>
+            <span class="footer__contacts-item-text">+38 (067) 180 8393</span>
+        </div>
+        <div class="footer__contacts-item">
+            <div class="footer__contacts-item--logo">
+                <img src="build/img/footer/location.svg" alt="">
+            </div>
+            <span class="footer__contacts-item-text">м.Львів, вул.В.Великого 16</span>
+        </div>
+        <a href="#" class="footer__contacts-link">www.mebli-lamarel.com</a>
+    </div>
+
+    <div class="footer__navigation">
+        <div class="footer__navigation-category">
+            <h1 class="footer__navigation-category-title">Головна</h1>
+
+            <h1 class="footer__navigation-category-item">Товари</h1>
+            <h1 class="footer__navigation-category-item">Популярні товари</h1>
+            <h1 class="footer__navigation-category-item">Про нас</h1>
+            <h1 class="footer__navigation-category-item">Новинки</h1>
+            <h1 class="footer__navigation-category-item">Гарантії</h1>
+        </div>
+        <div class="footer__navigation-category">
+            <h1 class="footer__navigation-category-title">Меню</h1>
+
+            <h1 class="footer__navigation-category-item">Головна</h1>
+            <h1 class="footer__navigation-category-item">Доставка і оплата</h1>
+            <h1 class="footer__navigation-category-item">Каталог</h1>
+        </div>
+        <div class="footer__navigation-category">
+            <h1 class="footer__navigation-category-title">Каталог</h1>
+
+            <h1 class="footer__navigation-category-item">Дивани</h1>
+            <h1 class="footer__navigation-category-item">Популярні товари</h1>
+            <h1 class="footer__navigation-category-item">Крісла</h1>
+            <h1 class="footer__navigation-category-item">Ліжка</h1>
+        </div>
+    </div>
+
+    <button class="button_purple">
+        Передзвоніть мені
+    </button>
+
+    <p class="footer__copyright">
+        Development by Lamarel
+    </p>
+</footer>
+
+<script src="build/js/scripts.min.js"></script>
 </body>
 </html>
