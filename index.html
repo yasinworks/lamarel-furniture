@@ -86,7 +86,7 @@
     </a>
 </section>
 
-<section class="top-products">
+<section id="top-products" class="top-products">
     <div class="top-products__title">
         <p>Популярні товари</p>
         <div class="title-line purple"></div>
@@ -227,7 +227,7 @@
     <div class="swiper-button-prev"></div>
 </section>
 
-<section class="about">
+<section id="about" class="about">
     <div class="about__title">
         <h1 class="about__title-content">Про нас</h1>
         <div class="title-line yellow"></div>
@@ -283,9 +283,9 @@
     </div>
 </section>
 
-<section class="new-products">
+<section id="new-products" class="new-products">
     <div class="new-products__title">
-        <h1 class="new-products__title-content">Про нас</h1>
+        <h1 class="new-products__title-content">Новинки</h1>
         <div class="title-line purple"></div>
     </div>
     <section class="swiper-container slider">
@@ -385,7 +385,7 @@
     </section>
 </section>
 
-<section class="guaranties">
+<section id="guaranties" class="guaranties">
     <div class="guaranties__title">
         <h1 class="guaranties__title-content">
             Наші гарантії
@@ -479,26 +479,26 @@
         <div class="footer__navigation-category">
             <h1 class="footer__navigation-category-title">Головна</h1>
             
-            <h1 class="footer__navigation-category-item">Товари</h1>
-            <h1 class="footer__navigation-category-item">Популярні товари</h1>
-            <h1 class="footer__navigation-category-item">Про нас</h1>
-            <h1 class="footer__navigation-category-item">Новинки</h1>
-            <h1 class="footer__navigation-category-item">Гарантії</h1>
+            <a href="/catalog.html" class="footer__navigation-category-item">Товари</a>
+            <a onclick="scrollToElement('top-products')" class="footer__navigation-category-item">Популярні товари</a>
+            <a onclick="scrollToElement('about')" class="footer__navigation-category-item">Про нас</a>
+            <a onclick="scrollToElement('new-products')" class="footer__navigation-category-item">Новинки</a>
+            <a onclick="scrollToElement('guaranties')" class="footer__navigation-category-item">Гарантії</a>
         </div>
         <div class="footer__navigation-category">
             <h1 class="footer__navigation-category-title">Меню</h1>
 
-            <h1 class="footer__navigation-category-item">Головна</h1>
-            <h1 class="footer__navigation-category-item">Доставка і оплата</h1>
-            <h1 class="footer__navigation-category-item">Каталог</h1>
+            <a href="/catalog.html" class="footer__navigation-category-item">Головна</a>
+            <a href="/delivery.html" class="footer__navigation-category-item">Доставка і оплата</a>
+            <a href="catalog.html" class="footer__navigation-category-item">Каталог</a>
         </div>
         <div class="footer__navigation-category">
             <h1 class="footer__navigation-category-title">Каталог</h1>
 
-            <h1 class="footer__navigation-category-item">Дивани</h1>
-            <h1 class="footer__navigation-category-item">Популярні товари</h1>
-            <h1 class="footer__navigation-category-item">Крісла</h1>
-            <h1 class="footer__navigation-category-item">Ліжка</h1>
+            <a href="/catalog.html" class="footer__navigation-category-item">Дивани</a>
+            <a onclick="scrollToElement('top-products')" class="footer__navigation-category-item">Популярні товари</a>
+            <a href="/catalog.html" class="footer__navigation-category-item">Крісла</a>
+            <a href="/catalog.html" class="footer__navigation-category-item">Ліжка</a>
         </div>
     </div>
 

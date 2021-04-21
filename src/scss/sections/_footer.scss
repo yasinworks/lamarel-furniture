@@ -80,11 +80,15 @@
       &-item {
         font-weight: normal;
         font-size: 20px;
-        color: #282828;
-        opacity: 0.5;
+        color: rgba(40, 40, 40, .5);
+        text-decoration: none;
 
         &:not(:last-child) {
           margin-bottom: 15px;
+        }
+        
+        &:hover {
+          color: #282828;
         }
       }
     }
