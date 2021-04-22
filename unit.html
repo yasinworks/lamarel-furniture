@@ -373,38 +373,38 @@
 </div>
 
 <footer class="footer">
-    <img class="footer__logo" src="build/img/hero/logo.svg" alt="">
-    <div class="footer__description">
-        <p>Магазин меблів у країні з 2019 року. На нашому веб-сайті ми продаємо понад 1000+ фірмових товарів</p>
-    </div>
-    <div class="footer__contacts">
-        <div class="footer__contacts-item">
-            <div class="footer__contacts-item--logo">
-                <img src="build/img/footer/phone.svg" alt="">
+    <div class="footer__content">
+        <div class="footer__content-contacts">
+            <img class="footer__logo" src="build/img/hero/logo.svg" alt="">
+            <div class="footer__description">
+                <p>Магазин меблів у країні з 2019 року. <br> На нашому веб-сайті ми продаємо <br> понад 1000+ фірмових
+                    товарів</p>
             </div>
-            <span class="footer__contacts-item-text">+38 (067) 180 8393</span>
-        </div>
-        <div class="footer__contacts-item">
-            <div class="footer__contacts-item--logo">
-                <img src="build/img/footer/location.svg" alt="">
+            <div class="footer__contacts">
+                <div class="footer__contacts-item">
+                    <div class="footer__contacts-item--logo">
+                        <img src="build/img/footer/phone.svg" alt="">
+                    </div>
+                    <span class="footer__contacts-item-text">+38 (067) 180 8393</span>
+                </div>
+                <div class="footer__contacts-item">
+                    <div class="footer__contacts-item--logo">
+                        <img src="build/img/footer/location.svg" alt="">
+                    </div>
+                    <span class="footer__contacts-item-text">м.Львів, вул.В.Великого 16</span>
+                </div>
+                <a href="#" class="footer__contacts-link">www.mebli-lamarel.com</a>
             </div>
-            <span class="footer__contacts-item-text">м.Львів, вул.В.Великого 16</span>
         </div>
-        <a href="#" class="footer__contacts-link">www.mebli-lamarel.com</a>
-    </div>
 
-    <div class="footer__navigation">
         <div class="footer__navigation-category">
             <h1 class="footer__navigation-category-title">Головна</h1>
 
             <a href="/catalog.html" class="footer__navigation-category-item">Товари</a>
-            <a onclick="scrollToAnotherPage('index', 'top-products')" class="footer__navigation-category-item">Популярні
-                товари</a>
+            <a onclick="scrollToAnotherPage('index', 'top-products')" class="footer__navigation-category-item">Популярні товари</a>
             <a onclick="scrollToAnotherPage('index', 'about')" class="footer__navigation-category-item">Про нас</a>
-            <a onclick="scrollToAnotherPage('index', 'new-products')"
-               class="footer__navigation-category-item">Новинки</a>
-            <a onclick="scrollToAnotherPage('index', 'guaranties')"
-               class="footer__navigation-category-item">Гарантії</a>
+            <a onclick="scrollToAnotherPage('index', 'new-products')" class="footer__navigation-category-item">Новинки</a>
+            <a onclick="scrollToAnotherPage('index', 'guaranties')" class="footer__navigation-category-item">Гарантії</a>
         </div>
         <div class="footer__navigation-category">
             <h1 class="footer__navigation-category-title">Меню</h1>
@@ -417,17 +417,15 @@
             <h1 class="footer__navigation-category-title">Каталог</h1>
 
             <a href="/catalog.html" class="footer__navigation-category-item">Дивани</a>
-            <a onclick="scrollToAnotherPage('index', 'top-products')" class="footer__navigation-category-item">Популярні
-                товари</a>
+            <a onclick="scrollToAnotherPage('index', 'top-products')" class="footer__navigation-category-item">Популярні товари</a>
             <a href="/catalog.html" class="footer__navigation-category-item">Крісла</a>
             <a href="/catalog.html" class="footer__navigation-category-item">Ліжка</a>
         </div>
+
+        <button onclick="handleCallback()" class="button_purple">
+            Передзвоніть мені
+        </button>
     </div>
-
-    <button onclick="handleCallback()" class="button_purple">
-        Передзвоніть мені
-    </button>
-
     <p class="footer__copyright">
         Development by Lamarel
     </p>
