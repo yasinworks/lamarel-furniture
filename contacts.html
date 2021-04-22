@@ -90,6 +90,31 @@
         width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 
+<div class="callback__wrap">
+    <div class="callback__content">
+        <div class="callback__content-close">
+            <div class="callback__content-close--line"></div>
+            <div class="callback__content-close--line"></div>
+        </div>
+        <div class="callback__content-img">
+            <img src="build/img/callback-img.jpeg" alt="">
+        </div>
+
+        <div class="callback__content-inputs">
+            <p class="callback__content-title">
+                ЗАПОВНІТЬ ФОРМУ
+            </p>
+
+            <label class="callback__content-label" for="input-name">Ім’я</label>
+            <input class="callback__content-input" type="text" id="input-name">
+
+            <label class="callback__content-label" for="input-phone">Номер телефона</label>
+            <input class="callback__content-input" type="text" id="input-phone" placeholder="+380 (***) ***-**-**">
+        </div>
+        <div class="button_purple">ВІДПРАВИТИ</div>
+    </div>
+</div>
+
 <footer class="footer">
     <img class="footer__logo" src="build/img/hero/logo.svg" alt="">
     <div class="footer__description">
@@ -138,7 +163,7 @@
         </div>
     </div>
 
-    <button class="button_purple">
+    <button onclick="handleCallback()" class="button_purple">
         Передзвоніть мені
     </button>
 
