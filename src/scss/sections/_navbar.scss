@@ -68,6 +68,7 @@
       border-radius: 31px;
       padding: 35px 60px;
       display: none;
+      text-align: center;
 
       &.opened {
         display: block;
@@ -84,6 +85,21 @@
           margin-bottom: 30px;
         }
       }
+    }
+  }
+
+  & .button_yellow {
+    padding: 25px 80px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #282828;
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+
+    & img {
+      width: 27px;
+      height: 27px;
     }
   }
 }

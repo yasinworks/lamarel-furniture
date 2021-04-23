@@ -1,0 +1,20 @@
+@media (min-width: 1000px) {
+  .navbar {
+    &__logo {
+      transform: translateX(-100px);
+    }
+
+    &__burger {
+
+      &-menu {
+        top: 155px;
+        right: 125px;
+        left: initial;
+      }
+    }
+
+    & .button_yellow {
+      display: flex;
+    }
+  }
+}

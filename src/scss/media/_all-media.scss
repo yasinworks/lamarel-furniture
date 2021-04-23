@@ -1,1 +1,9 @@
+@import 'navbar-desktop';
+@import 'hero-desktop';
 @import 'footer-desktop';
+
+@media (min-width: 1000px) {
+  .container {
+    padding: 0 50px;
+  }
+}
