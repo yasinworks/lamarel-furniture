@@ -1,9 +1,15 @@
 @import 'navbar-desktop';
 @import 'hero-desktop';
+@import 'breadcrumb-desktop';
+@import 'contacts-desktop';
 @import 'footer-desktop';
 
 @media (min-width: 1000px) {
   .container {
     padding: 0 50px;
+  }
+
+  .title-line {
+    height: 33px;
   }
 }

@@ -1,0 +1,16 @@
+@media (min-width: 1000px) {
+  .contacts {
+    position: relative;
+    &__content {
+      position: absolute;
+      padding: 35px 50px;
+      top: 90px;
+      left: 110px;
+    }
+
+    &__map {
+      height: 660px;
+      margin-top: 30px;
+    }
+  }
+}
