@@ -14,34 +14,7 @@
     padding: 10px 40px;
     margin-bottom: 20px;
     margin-top: 20px;
-    //display: none;
   }
-
-  //&:hover {
-  //  & .product__img {
-  //      background: #FFDD55;
-  //  }
-  //
-  //  & .product__info {
-  //    padding: 185px 70px 20px;
-  //  }
-  //
-  //  & .product__info-name {
-  //    display: none;
-  //  }
-  //
-  //  & .product__info-price {
-  //    display: none;
-  //  }
-  //
-  //  & .button_purple {
-  //    display: inline-block;
-  //  }
-  //
-  //  & .product__info-link {
-  //    display: inline-block;
-  //  }
-  //}
 
   &__img {
     background: linear-gradient(180deg, #FFDD55 30.73%, rgba(252, 243, 208, 0) 100%);
@@ -85,7 +58,6 @@
       font-size: 15px;
       color: #282828;
       opacity: .35;
-      //display: none;
       text-decoration: none;
     }
   }
