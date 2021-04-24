@@ -1,0 +1,19 @@
+@media (min-width: 1000px) {
+  .catalog__wrap {
+    flex-direction: row;
+  }
+
+  .filter {
+    height: 800px;
+
+    &__dropdown {
+      display: none;
+    }
+
+    &__content {
+      display: block;
+      width: 200px;
+      padding: 30px 70px 30px 40px;
+    }
+  }
+}
