@@ -1,0 +1,8 @@
+@media (min-width: 1000px) {
+  .products {
+    &__content {
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
