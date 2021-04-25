@@ -37,36 +37,59 @@
     </nav>
 
     <div class="hero">
-        <button onclick="window.location.href='/catalog.html'" class="button_yellow">
-            <img src="build/img/hero/catalog-icon.svg" alt="catalog">
-            Каталог товарів
-        </button>
-        <div class="hero__text">
-            <p class="hero__title">
-                Style &<br>
-                Comfort <span class="yellow">At</span><br>
-                <span class="purple">Lamarel</span> Furniture
-            </p>
-            <p class="hero__description">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-            </p>
-        </div>
-        <button onclick="window.location.href='/catalog.html'" class="button_purple">Перейти в каталог</button>
+        <div class="hero__content">
+            <button onclick="window.location.href='/catalog.html'" class="button_yellow">
+                <img src="build/img/hero/catalog-icon.svg" alt="catalog">
+                Каталог товарів
+            </button>
+            <div class="hero__text">
+                <p class="hero__title">
+                    Style &<br>
+                    Comfort <span class="yellow">At</span><br>
+                    <span class="purple">Lamarel</span> Furniture
+                </p>
+                <p class="hero__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                </p>
+            </div>
+            <div class="hero__buttons">
+                <button onclick="window.location.href='/catalog.html'" class="button_purple">Перейти в каталог</button>
 
-        <a class="hero__link" href="#">Дізнатися більше</a>
+                <a class="hero__link" href="#">Дізнатися більше</a>
+            </div>
+        </div>
+
+        <div class="hero__img">
+            <img src="build/img/hero/hero-img.png" alt="">
+        </div>
+        <div class="hero__contacts">
+            <div class="contacts__content-messenger-item inst">
+                <img src="build/img/svg/insta.svg" alt="">
+            </div>
+            <div class="contacts__content-messenger-item fb">
+                <img src="build/img/svg/facebook.svg" alt="">
+            </div>
+            <div class="contacts__content-messenger-item tg">
+                <img src="build/img/svg/tg.svg" alt="">
+            </div>
+        </div>
     </div>
 </div>
 
 <section class="delivery-index">
-    <div class="container">
-        <img class="delivery-index__img" src="build/img/delivery/sofa-sm.png" alt="">
-    </div>
-    <div class="delivery-index__content">
-        <p class="delivery-index__content-title">Безкоштовна доставка в межах міста Львова</p>
-        <button onclick="window.location.href='/catalog.html'" class="button_yellow">
-            Перейти в каталог
-        </button>
+    <div class="delivery-index__wrap">
+        <picture class="container">
+            <source media="(min-width: 1000px)" srcset="build/img/delivery/sofa-big.png">
+            <img class="delivery-index__img" src="build/img/delivery/sofa-sm.png" alt="">
+        </picture>
+        <div class="delivery-index__content">
+            <p class="delivery-index__content-title">Безкоштовна доставка в межах міста Львова</p>
+            <button onclick="window.location.href='/catalog.html'" class="button_yellow">
+                Перейти в каталог
+            </button>
+        </div>
     </div>
 </section>
 

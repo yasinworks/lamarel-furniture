@@ -1,7 +1,69 @@
 @media (min-width: 1000px) {
   .hero {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+
     & .button_yellow {
       display: none;
+    }
+
+    &__title {
+      font-size: 80px;
+      line-height: 100px;
+      margin-top: 0;
+    }
+
+    &__content {
+      display: inline-block;
+      width: 730px;
+      margin-top: 60px;
+    }
+
+    &__description {
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    &__buttons {
+      flex-direction: row;
+      align-content: center;
+
+      & a {
+        margin-top: 0;
+        margin-left: 70px;
+        font-size: 20px;
+      }
+
+      & .button_purple {
+        padding: 25px 50px;
+        font-size: 20px;
+      }
+    }
+
+    &__img {
+      display: inline-block;
+
+      & img {
+        width: 40vw;
+      }
+    }
+
+    &__contacts {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      bottom: -10px;
+      right: -40px;
+
+      & div {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
     }
   }
 }

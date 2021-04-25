@@ -40,6 +40,11 @@
     margin-top: 35px;
   }
 
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
   & .button_yellow {
     padding: 25px 70px 25px 80px;
     font-weight: 500;
@@ -63,5 +68,13 @@
     color: #fff;
     padding: 20px 30px;
     align-self: center;
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__contacts {
+    display: none;
   }
 }
