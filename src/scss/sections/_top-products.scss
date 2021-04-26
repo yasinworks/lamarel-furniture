@@ -1,7 +1,7 @@
 .top-products {
-  padding: 0 27px 0;
 
   &__title {
+    padding: 0 27px 0;
     display: inline-block;
     text-align: center;
     position: relative;
@@ -42,6 +42,7 @@
   }
 
   &__info {
+    padding: 0 27px 0;
     margin-top: 30px;
 
     &-title {
@@ -58,6 +59,7 @@
     }
 
     &-link {
+      padding: 0 27px 0;
       font-weight: 500;
       font-size: 15px;
       line-height: 173%;

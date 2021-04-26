@@ -1,15 +1,92 @@
 @media (min-width: 1000px) {
   .top-products {
     margin-top: 200px;
+    position: relative;
 
-     &__title {
-       & p {
-         font-size: 80px;
-       }
+    &__title {
+      padding: 0 100px 0;
+      & p {
+        font-size: 80px;
+        bottom: 5px;
+      }
 
-       .title-line {
-         width: 740px;
-       }
-     }
+      & .title-line {
+        width: 740px;
+      }
+    }
+
+    &__content {
+      display: flex;
+
+      & .slider {
+        width: 40vw;
+        margin: 0;
+        padding-bottom: 29px;
+
+        & .swiper-button-next {
+          top: 445px;
+          right: 190px;
+        }
+
+        & .swiper-button-prev {
+          top: 445px;
+          left: 190px;
+        }
+      }
+    }
+
+    &__info {
+      padding-left: 100px;
+
+      &-wrap {
+        width: 60vw;
+      }
+
+      &-title {
+        margin-top: 100px;
+        font-size: 40px;
+      }
+
+      &-description {
+        font-size: 20px;
+        line-height: 35px;
+        margin-top: 20px;
+      }
+
+      &-link {
+        padding-left: 100px;
+        &_bg {
+          height: 60px;
+          width: 60px;
+        }
+
+
+        & .title-line {
+          height: 25px;
+          width: 213px;
+          position: initial;
+          transform: translate(60px, 15px);
+        }
+
+        & span {
+          font-size: 25px;
+          position: absolute;
+          bottom: 0;
+          width: 256px;
+        }
+      }
+    }
+
+    &__tabs {
+      position: absolute;
+      top: -50px;
+      right: 120px;
+
+      &-item {
+        &:not(:first-child) {
+          margin-left: 30px;
+        }
+      }
+    }
   }
 }
