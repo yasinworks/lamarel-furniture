@@ -1,0 +1,55 @@
+@media (min-width: 1000px) {
+  .guaranties {
+    margin-top: 170px;
+    margin-bottom: 120px;
+    padding-left: 100px;
+
+    &__title {
+      & h1 {
+        font-size: 80px;
+      }
+
+      & .title-line {
+        width: 560px;
+      }
+    }
+
+    &__item {
+      margin: 0;
+
+      &-wrap {
+        margin-top: 70px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row-gap: 50px;
+        padding: 0 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1920px) {
+  .guaranties {
+    &__item {
+      &-wrap {
+        grid-row-gap: 70px;
+      }
+
+      &-img {
+        width: 100px;
+        height: 100px;
+      }
+
+      &-text {
+
+        &--title {
+          font-size: 25px;
+        }
+
+        &--description {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
