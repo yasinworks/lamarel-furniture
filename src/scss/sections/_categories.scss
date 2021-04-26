@@ -1,5 +1,7 @@
 .categories {
   margin-bottom: 30px;
+  position: relative;
+
   &__item {
     display: block;
     position: relative;
@@ -18,5 +20,10 @@
       font-size: 30px;
       color: #fff;
     }
+  }
+
+  &__button {
+    position: absolute;
+    display: none;
   }
 }
