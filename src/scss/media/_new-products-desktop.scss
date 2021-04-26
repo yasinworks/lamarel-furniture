@@ -1,0 +1,31 @@
+@media (min-width: 1000px) {
+  .new-products {
+    padding: 0 100px;
+
+    &__title {
+      & h1 {
+        font-size: 80px;
+        bottom: 5px;
+      }
+
+      & .title-line {
+        width: 370px;
+      }
+    }
+
+    & .slider {
+      margin-top: 50px;
+      padding: 0 100px 50px;
+
+      & .swiper-button-next {
+        top: 411px;
+        right: 500px;
+      }
+
+      & .swiper-button-prev {
+        top: 411px;
+        left: 500px;
+      }
+    }
+  }
+}

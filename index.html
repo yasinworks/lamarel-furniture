@@ -337,7 +337,7 @@
         <h1 class="new-products__title-content">Новинки</h1>
         <div class="title-line purple"></div>
     </div>
-    <section class="swiper-container slider">
+    <section class="swiper-container slider new">
         <div class="swiper-wrapper slider__content">
             <div class="swiper-slide">
                 <div class="product">-->
@@ -592,8 +592,24 @@
 <script type="module">
     import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
     let top = document.querySelector('.swiper-container.slider.top')
+    let newProd = document.querySelector('.swiper-container.slider.new')
 
     let swiperTop = new Swiper(top, {
+        slidesPerView: 1.7,
+        spaceBetween: 20,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        centeredSlides: true
+    });
+
+    let swiperNew = new Swiper(newProd, {
         slidesPerView: 1.7,
         spaceBetween: 20,
         loop: true,
@@ -612,6 +628,21 @@
         swiperTop = new Swiper(top, {
             slidesPerView: 3,
             spaceBetween: 280,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            centeredSlides: true
+        });
+
+        swiperNew = new Swiper(newProd, {
+            slidesPerView: 3,
+            spaceBetween: 130,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
