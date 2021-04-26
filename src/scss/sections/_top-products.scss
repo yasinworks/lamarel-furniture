@@ -4,11 +4,14 @@
   &__title {
     display: inline-block;
     text-align: center;
+    position: relative;
+
     & p {
       font-weight: bold;
       font-size: 30px;
       color: #282828;
-      transform: translateY(15px);
+      position: absolute;
+      bottom: 5px;
     }
 
     & .title-line {

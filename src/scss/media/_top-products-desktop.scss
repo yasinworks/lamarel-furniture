@@ -1,0 +1,15 @@
+@media (min-width: 1000px) {
+  .top-products {
+    margin-top: 200px;
+
+     &__title {
+       & p {
+         font-size: 80px;
+       }
+
+       .title-line {
+         width: 740px;
+       }
+     }
+  }
+}
