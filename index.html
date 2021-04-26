@@ -591,6 +591,7 @@
 <script src="build/js/scripts.min.js"></script>
 <script type="module">
     import Swiper from 'https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js'
+
     let top = document.querySelector('.swiper-container.slider.top')
     let newProd = document.querySelector('.swiper-container.slider.new')
 
@@ -624,7 +625,37 @@
         centeredSlides: true
     });
 
-    if (window.screen.availWidth >= 1000) {
+    if (window.screen.availWidth >= 1920) {
+        swiperTop = new Swiper(top, {
+            slidesPerView: 3,
+            spaceBetween: 110,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            centeredSlides: true
+        });
+
+        swiperNew = new Swiper(newProd, {
+            slidesPerView: 4,
+            spaceBetween: 100,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // centeredSlides: true
+        });
+    } else if (window.screen.availWidth >= 1000) {
         swiperTop = new Swiper(top, {
             slidesPerView: 3,
             spaceBetween: 280,
@@ -643,21 +674,6 @@
         swiperNew = new Swiper(newProd, {
             slidesPerView: 3,
             spaceBetween: 130,
-            loop: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            centeredSlides: true
-        });
-    } else if (window.screen.availWidth >= 1920) {
-        swiperTop = new Swiper(top, {
-            slidesPerView: 3,
-            spaceBetween: 110,
             loop: true,
             pagination: {
                 el: '.swiper-pagination',
