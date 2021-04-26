@@ -6,6 +6,10 @@
   &__img {
     position: absolute;
     top: -65px;
+
+    &_big {
+      display: none;
+    }
   }
 
   &__content {
