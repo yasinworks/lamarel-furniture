@@ -1,0 +1,15 @@
+@media (min-width: 1000px) {
+  .about {
+    margin-top: 200px;
+
+    &__title {
+      & h1 {
+        font-size: 80px;
+      }
+
+      & .title-line {
+        width: 328px;
+      }
+    }
+  }
+}
