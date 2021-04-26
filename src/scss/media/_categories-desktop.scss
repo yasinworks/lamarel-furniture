@@ -1,7 +1,6 @@
 @media (min-width: 1000px) {
   .categories {
     display: flex;
-    flex-wrap: wrap;
     height: calc(100vw / 4.4);
 
     &__item {
