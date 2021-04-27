@@ -8,9 +8,9 @@
     grid-column-gap: 60px;
 
     &__img {
-      display: inline-block;
-      grid-column: 2;
-      grid-row: 0/2;
+      display: block;
+      grid-column: 1/2;
+      grid-row: 2;
       position: relative;
 
       &-back {
