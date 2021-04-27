@@ -1,6 +1,10 @@
 .about {
   padding: 0 27px;
 
+  &__img {
+    display: none;
+  }
+
   &__title {
     position: relative;
     display: inline-flex;
