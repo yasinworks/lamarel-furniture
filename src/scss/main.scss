@@ -52,5 +52,23 @@ body {
   }
 }
 
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  display: none;
+
+  &.purple {
+    background-color: #5052a2;
+  }
+
+  &.yellow {
+    background-color: #FFDD55;
+    width: 190px;
+    height: 190px;
+  }
+}
+
 @import 'sections/all';
 @import 'media/all-media';

@@ -148,6 +148,10 @@
     &-item {
       margin-top: 25px;
 
+      &:last-child {
+        display: none;
+      }
+
       &--member {
         display: flex;
         align-items: center;
