@@ -2,21 +2,6 @@
   margin-top: 105px;
   position: relative;
 
-  .circle {
-    display: inline-block;
-
-    &.purple {
-      top: -50px;
-      right: 0;
-      transform: translateX(50%);
-    }
-
-    &.yellow {
-      bottom: 0;
-      left: 0;
-      transform: translateX(-50%);
-    }
-  }
 
   &__title {
     padding: 0 27px;
