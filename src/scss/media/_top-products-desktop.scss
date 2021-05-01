@@ -21,7 +21,7 @@
       & .slider {
         width: 40vw;
         margin: 0;
-        padding-bottom: 29px;
+        padding-bottom: 45px;
 
         & .swiper-button-next {
           top: 445px;
@@ -54,7 +54,7 @@
       }
 
       &-link {
-        padding-left: 100px;
+        padding: 0;
         &_bg {
           height: 60px;
           width: 60px;
@@ -79,7 +79,7 @@
 
     &__tabs {
       position: absolute;
-      top: -50px;
+      top: 0;
       right: 120px;
 
       &-item {

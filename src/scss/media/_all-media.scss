@@ -24,4 +24,10 @@
   .title-line {
     height: 33px;
   }
+
+  .button_yellow {
+    & img {
+      margin-right: 15px;
+    }
+  }
 }

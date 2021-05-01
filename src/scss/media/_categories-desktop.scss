@@ -6,16 +6,26 @@
     &__item {
       width: calc(100vw / 3);
       height: calc(100vw / 4.4);
+      transition: .5s ease-in-out;
+
+      &-title {
+        display: none;
+      }
 
       &-bg {
         width: calc(100vw / 3);
         height: calc(100vw / 4.4);
         filter: none;
+        transition: .5s ease-in-out;
       }
 
       &:hover {
         & .categories__item-bg {
           filter: brightness(.57);
+        }
+
+        & .categories__item-title {
+          display: initial;
         }
 
         & .categories__button {
